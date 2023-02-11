@@ -1,1 +1,1 @@
-BUCKET_NAME = "devqostest"
+BUCKET_NAME = "BUCKET_NAME"
