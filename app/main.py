@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile
-from presignedUrlGenerator import *
-import config
+from app.presignedUrlGenerator import *
+import app.config as config
 import requests
 
 app = FastAPI()
