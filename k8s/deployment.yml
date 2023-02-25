@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: s3-uploader-depl
+  labels:
+    app: s3-uploader
+spec: 
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: s3-uploader
+  template:
+    metadata:
+      labels:
+        app: s3-uploader
+    spec:
+      containers:
+      - name: s3-uploader
+        image: image_url
+        ports:
+        - containerPort: 80
